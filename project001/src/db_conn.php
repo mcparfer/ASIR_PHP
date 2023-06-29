@@ -2,9 +2,9 @@
 
 // CONSTANTES DB
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'id19704615_usermc');
-define('DB_PASSWORD', ')2y~C%*GN&@I>_@=');
-define('DB_NAME', 'id19704615_entradasdb');
+define('DB_USERNAME', '');
+define('DB_PASSWORD', '');
+define('DB_NAME', '');
 
 // CONEXION DB
 $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);

@@ -50,13 +50,13 @@ if (isset($_SESSION['name']) && isset($_SESSION['phone']) && isset($_SESSION['em
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'maricarmen61299@gmail.com';
-        $mail->Password   = 'knrkqqwbsefmascf';
+        $mail->Username   = 'example@gmail.com'; #Add yours
+        $mail->Password   = ''; #Add yours
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465; // (587 unencrypted o 465 SSL)
 
         // CORREO
-        $mail->setFrom('maricarmen61299@gmail.com', 'MC');
+        $mail->setFrom('example@gmail.com', 'example'); #Add yours
         $mail->addAddress($_SESSION['email']);
         $mail->addAttachment('../resources/tickets/' . $_SESSION['event'] . '/Entrada' . $_SESSION['phone'] . '.pdf');
         $mail->isHTML(true);
